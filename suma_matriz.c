@@ -11,8 +11,6 @@ int main()
     //Dimension de la matriz
     int filas;
     int columnas;
-    int i;
-    int j;
     printf("ingrese el numero de filas de las matrices -> ");
     scanf("%d", &filas);
     printf("ingrese el numero de columnas de las matrices -> ");
@@ -23,34 +21,47 @@ int main()
     int B[filas][columnas];
     
     //Matrices random
-    for ( i = 0; i < filas; i++)
+    for (int i = 0; i < filas; i++)
     {
-        for ( j = 0; j < columnas; j++)
+        for (int j = 0; j < columnas; j++)
         {
             A[i][j]=rand()%100;
             B[i][j]=rand()%100;
         }
     }
 
-    //Imprimir matrices
-    printf("Matriz A: \tMatriz B: \n");
-    for ( i = 0; i < filas; i++)
+    //Imprimir matriz A
+    printf("Matriz A: \n");
+    for (int i = 0; i < filas; i++)
     {
-        for ( j = 0; j < columnas; j++)
+        for (int j = 0; j < columnas; j++)
         {
             printf("%d\t", A[i][j]);
-            printf("%d\t", B[i][j]);
         }
         printf("\n");
     }
 
     printf("\n");
 
+    //Imprimir matriz B
+    printf("Matriz B: \n");
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            printf("%d\t", B[i][j]);
+        }
+        printf("\n");
+    }
+    
+
+    printf("\n");
+
     //Suma de matrices
     int C[filas][columnas];
-    for ( i = 0; i < filas; i++)
+    for (int i = 0; i < filas; i++)
     {
-        for ( j = 0; j < columnas; j++)
+        for (int j = 0; j < columnas; j++)
         {
             C[i][j] = A[i][j] + B[i][j];
         }
@@ -58,9 +69,9 @@ int main()
 
     //imprimir la matriz suma
     printf("Matriz suma C: \n");
-    for ( i = 0; i < filas; i++)
+    for (int i = 0; i < filas; i++)
     {
-        for (j = 0; j < columnas; j++)
+        for (int j = 0; j < columnas; j++)
         {
             printf("%d\t", C[i][j]);
         }
