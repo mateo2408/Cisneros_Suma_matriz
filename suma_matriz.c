@@ -32,9 +32,16 @@ int main()
         }
     }
 
-    
-    
-    
-    
+    //Imprimir matrices
+    printf("Matriz A: \tMatriz B: \n");
+    for ( i = 0; i < filas; i++)
+    {
+        for ( j = 0; j < columnas; j++)
+        {
+            printf("%d\t", A[i][j]);
+            printf("%d\t", B[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
