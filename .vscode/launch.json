@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/mateocisneros/VisualCode/Segundo_Semestre/Segundo_Progreso/Suma_matriz",
-      "program": "/Users/mateocisneros/VisualCode/Segundo_Semestre/Segundo_Progreso/Suma_matriz/build/Debug/outDebug"
+      "cwd": "/Users/mateocisneros/VisualCode/Segundo_Semestre/Segundo_Progreso/Cisneros_Suma_matriz",
+      "program": "/Users/mateocisneros/VisualCode/Segundo_Semestre/Segundo_Progreso/Cisneros_Suma_matriz/build/Debug/outDebug"
     }
   ]
 }

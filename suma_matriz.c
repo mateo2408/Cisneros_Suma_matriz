@@ -43,5 +43,30 @@ int main()
         }
         printf("\n");
     }
+
+    printf("\n");
+
+    //Suma de matrices
+    int C[filas][columnas];
+    for ( i = 0; i < filas; i++)
+    {
+        for ( j = 0; j < columnas; j++)
+        {
+            C[i][j] = A[i][j] + B[i][j];
+        }
+    }
+
+    //imprimir la matriz suma
+    printf("Matriz suma C: \n");
+    for ( i = 0; i < filas; i++)
+    {
+        for (j = 0; j < columnas; j++)
+        {
+            printf("%d\t", C[i][j]);
+        }
+        printf("\n");
+    }
+    
+    
     return 0;
 }
